@@ -1,6 +1,6 @@
 # Engineering Technology static site
 
-The live GitHub Pages site is published from the `main` branch of `nidarshanadaham-ux/sinhala-engineering-technology`. Its Pages configuration serves files from the repository root; this folder is the prepared site bundle used to update that published root.
+The live GitHub Pages site is published from the `main` branch of `nidarshanadaham-ux/engineering-technology-learning`. Its Pages configuration serves files from the repository root; this folder is the prepared site bundle used to update that published root.
 
 To update the live site, copy the contents of this folder into the repository root and push to `main`. GitHub Pages serves the static HTML, CSS, JavaScript, and assets directly; no build command or server configuration is required.
 
