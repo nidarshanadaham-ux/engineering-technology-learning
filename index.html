@@ -3,99 +3,42 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0e151c">
-  <meta name="description" content="අ.පො.ස. උසස් පෙළ ඉංජිනේරු තාක්ෂණවේදය ඉගෙනුම් ද්වාරය">
+  <meta name="theme-color" content="#0d2f55">
+  <meta name="description" content="අ.පො.ස. උසස් පෙළ ඉංජිනේරු තාක්ෂණවේදය සඳහා පාඩම්, මෝටර් රථ තාක්ෂණ ප්‍රශ්නාවලිය සහ AI ගුරු සහායක පෙරදසුන.">
   <title>ඉංජිනේරු තාක්ෂණවේදය | ඉගෙනුම් ද්වාරය</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root{color-scheme:dark;font-family:"Noto Sans Sinhala","Iskoola Pota","Nirmala UI",system-ui,sans-serif;color:#e6ebf0;background:#0e151c;font-synthesis:none}
-    *{box-sizing:border-box}
-    body{margin:0;min-height:100vh;background:#0e151c;color:#e6ebf0}
-    a{color:inherit}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
-    main{padding:64px 0 60px}
-    .hero{position:relative;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(220px,.8fr);gap:24px;align-items:center;min-height:300px;padding:38px 44px;border:1px solid #0d2f5520;border-radius:24px;overflow:hidden;background:linear-gradient(145deg,#092541 0%,#0d2f55 55%,#174b7d 100%);box-shadow:0 12px 30px #14263a18}
-    .hero::before{position:absolute;inset:0;background:radial-gradient(ellipse at 88% 8%,rgba(43,160,184,.16),transparent 42%);content:"";pointer-events:none}
-    .hero-copy{position:relative;z-index:1;max-width:700px}
-    .hero-visual{position:relative;z-index:1;display:grid;place-items:center;min-height:230px}
-    .hero-visual::before,.hero-visual::after{position:absolute;border:1px solid #ffffff20;border-radius:50%;content:"";pointer-events:none}
-    .hero-visual::before{width:218px;height:218px;box-shadow:0 0 0 22px #ffffff08}
-    .hero-visual::after{width:174px;height:174px;border-style:dashed;animation:orbit 36s linear infinite}
-    .gear-art{position:relative;width:min(100%,340px);overflow:visible;filter:drop-shadow(0 10px 24px #0005)}
-    @keyframes orbit{to{transform:rotate(360deg)}}
-    .identity{display:flex;align-items:center;gap:19px}
-    .portal-logo{flex:0 0 auto;width:92px;height:92px;border:3px solid #e8a33d;border-radius:50%;background:#17212b;object-fit:cover;filter:invert(1) hue-rotate(180deg);box-shadow:0 0 0 7px #ffffff12,0 12px 30px #0005}
-    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:#81dce5;font-size:.85rem;font-weight:700;letter-spacing:.02em}
-    .eyebrow::before{width:20px;height:2px;border-radius:2px;background:#2ba0b8;content:""}
-    h1{font-size:clamp(1.7rem,3.8vw,2.7rem);font-weight:800;letter-spacing:-.025em;line-height:1.5;margin:5px 0 0;text-wrap:balance;color:#fff}
-    .portal-subtitle{margin:2px 0 0;color:#d6e5ec;font-size:.96rem;font-weight:600;line-height:1.8}
-    .lead{max-width:650px;margin:17px 0 0;color:#c4d2dc;font-size:1.01rem;line-height:2}
-    .section-label{display:flex;align-items:center;gap:12px;margin:42px 2px 18px}
-    .section-label h2{margin:0;font-size:1.45rem;font-weight:800}
-    .section-label span{color:#93a0ad;font-size:.9rem}
-    .cards{display:grid;grid-template-columns:minmax(0,1fr);max-width:650px;margin:auto;gap:20px}
-    .card{--card-accent:#48b8c3;position:relative;display:flex;min-height:260px;flex-direction:column;align-items:flex-start;padding:25px 28px;border:1px solid #2b3846;border-top:3px solid var(--card-accent);border-radius:18px;overflow:hidden;text-decoration:none;background:#17212b;box-shadow:0 8px 22px #0003;transition:transform .22s,border-color .22s,box-shadow .22s}
-    .card-resources{--card-accent:#e8a33d}
-    .card:hover{transform:translateY(-3px);border-color:var(--card-accent);background:#1b2935;box-shadow:0 12px 28px #0005}
-    .card:focus-visible{outline:3px solid var(--card-accent);outline-offset:4px}
-    .card .icon{display:grid;place-items:center;width:54px;height:54px;border:1px solid color-mix(in srgb,var(--card-accent) 40%,#2b3846);border-radius:15px;background:color-mix(in srgb,var(--card-accent) 12%,#17212b);font-size:1.65rem}
-    .card-kicker{position:relative;z-index:1;margin-top:15px;color:var(--card-accent);font-size:.77rem;font-weight:800;letter-spacing:.04em}
-    .card h2{position:relative;z-index:1;margin:5px 0 8px;font-size:clamp(1.2rem,2.1vw,1.55rem);font-weight:800;line-height:1.65}
-    .card p{position:relative;z-index:1;margin:0;color:#b4c0cc;line-height:1.9}
-    .card strong{position:relative;z-index:1;display:inline-flex;align-items:center;gap:12px;margin-top:auto;padding:9px 14px;border:1px solid color-mix(in srgb,var(--card-accent) 58%,#2b3846);border-radius:999px;background:color-mix(in srgb,var(--card-accent) 14%,#17212b);color:#e6ebf0;font-weight:800}
-    .card strong span{display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--card-accent);color:#fff;font-size:1rem;transition:transform .2s}
-    .card:hover strong span{transform:translateX(3px)}
-    .about{margin-top:24px;padding:22px 26px;border:1px solid #2b3846;border-radius:18px;background:#17212b}
-    .about h2{margin:0 0 8px;font-size:1.1rem;font-weight:700}
-    .about p{max-width:900px;margin:0;color:#b4c0cc;line-height:1.9}
-    footer{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:20px 0 28px;color:#93a0ad;font-size:.83rem;border-top:1px solid #2b3846}
-    .credits{display:flex;flex-wrap:wrap;gap:10px}
-    .credit-chip{display:grid;gap:5px;min-width:245px;padding:12px 17px;border:1px solid #2b3846;border-left:3px solid #48b8c3;border-radius:12px;background:#17212b}.credit-chip strong{color:#81dce5;font-size:.94rem;font-weight:800}.credit-chip small{color:#e6ebf0;font-size:.88rem;line-height:1.6}
-    .admin{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 16px;border:1px solid #2b3846;border-radius:10px;background:#17212b;color:#e6ebf0;font-size:.82rem;font-weight:700;text-decoration:none;transition:background .2s,border-color .2s,color .2s}
-    .admin:hover{border-color:#48b8c3;background:#1b2935;color:#fff}
-    @media(max-width:760px){.wrap{width:min(100% - 28px,1120px)}main{padding-top:30px}.hero{min-height:0;padding:30px 26px;grid-template-columns:minmax(0,1.2fr) minmax(180px,.8fr)}.hero-copy{max-width:unset}.hero-visual{min-height:200px}.hero-visual::before{width:176px;height:176px}.hero-visual::after{width:142px;height:142px}.lead{max-width:590px}.section-label{margin-top:32px}.cards{gap:14px}.card{min-height:250px;padding:22px}}
-    @media(max-width:560px){.wrap{width:min(100% - 24px,1120px)}main{padding:18px 0 36px}.hero{padding:24px 18px 18px;border-radius:20px;grid-template-columns:1fr}.hero-visual{min-height:150px;margin-top:12px}.hero-visual::before{width:138px;height:138px}.hero-visual::after{width:112px;height:112px}.gear-art{width:220px}.identity{gap:13px}.portal-logo{width:68px;height:68px;border-width:2px;box-shadow:0 0 0 5px #ffffff12,0 8px 20px #0005}.eyebrow{font-size:.75rem}.hero h1{font-size:clamp(1.35rem,6.2vw,1.8rem);line-height:1.55}.portal-subtitle{font-size:.79rem;line-height:1.65}.lead{font-size:.93rem;line-height:1.9;margin-top:15px}.section-label{display:block;margin:28px 2px 13px}.section-label h2{font-size:1.25rem}.section-label span{display:block;margin-top:3px}.cards{grid-template-columns:1fr}.card{min-height:0;padding:20px;border-radius:16px}.card-kicker{margin-top:12px}.card h2{margin-top:4px}.card strong{padding:9px 13px}.about{margin-top:16px;padding:18px}.about h2{line-height:1.7}footer{align-items:flex-start;flex-direction:column;gap:12px}.admin{align-self:flex-end}}
-    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+    :root{font-family:"Noto Sans Sinhala","Iskoola Pota","Nirmala UI",system-ui,sans-serif;color:#14263a;background:#f3f6f9;font-synthesis:none}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;background:#f3f6f9;color:#14263a}a{color:inherit}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}
+    main{padding:42px 0 52px}.hero{padding:clamp(25px,5vw,48px);border-radius:24px;color:#fff;background:linear-gradient(145deg,#092541,#0d2f55 55%,#174b7d);box-shadow:0 12px 30px #14263a18}
+    .eyebrow{color:#81dce5;font-weight:700}.hero h1{margin:8px 0;font-size:clamp(1.7rem,5vw,2.7rem);line-height:1.55}.hero p{max-width:760px;margin:0;color:#d6e5ec;line-height:2}
+    h2{line-height:1.6}.section-title{margin:34px 0 15px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,245px),1fr));gap:16px}
+    .card{display:flex;min-height:235px;flex-direction:column;padding:23px;border:1px solid #d5dde5;border-top:3px solid #2ba0b8;border-radius:17px;background:#fff;box-shadow:0 8px 22px #14263a0d;text-decoration:none;transition:transform .2s,box-shadow .2s}
+    .card:nth-child(2){border-top-color:#e8a33d}.card:nth-child(3){border-top-color:#5174cf}.card:nth-child(4){border-top-color:#458b65}.card:hover{transform:translateY(-3px);box-shadow:0 12px 28px #14263a16}.card:focus-visible{outline:3px solid #2ba0b8;outline-offset:3px}
+    .icon{font-size:1.8rem}.card h3{margin:10px 0 7px;font-size:1.2rem}.card p{margin:0 0 16px;color:#5d6b7a;line-height:1.85}.go{margin-top:auto;color:#15598f;font-weight:800}
+    .about{margin-top:22px;padding:20px 24px;border:1px solid #d5dde5;border-radius:16px;background:#fff}.about p{margin:0;color:#5d6b7a;line-height:1.9}
+    footer{padding:19px 0 28px;border-top:1px solid #d5dde5;color:#5d6b7a;font-size:.85rem}
+    @media(max-width:600px){main{padding-top:20px}.hero{border-radius:18px}.card{min-height:0;padding:20px}}
   </style>
 </head>
 <body>
   <main class="wrap">
     <section class="hero">
-      <div class="hero-copy">
-        <div class="identity">
-          <img class="portal-logo" src="/sinhala-engineering-technology/portal-logo.webp" alt="ඉංජිනේරු තාක්ෂණවේදය ද්වාරයේ ලාංඡනය" width="92" height="92">
-          <div>
-            <span class="eyebrow">ශ්‍රී ලංකා අ.පො.ස. උසස් පෙළ</span>
-            <h1>ඉංජිනේරු තාක්ෂණවේදය</h1>
-            <p class="portal-subtitle">උසස් පෙළ ඉගෙනුම් ද්වාරය</p>
-          </div>
-        </div>
-        <p class="lead">ඉගෙනීමත් තාක්ෂණයත් එකම තැනකින්. පාඩම් සහ අන්තර්ක්‍රියාකාරී සිමියුලේටර ඔස්සේ විෂය කරුණු හදාරා ප්‍රායෝගික අවබෝධය වර්ධනය කරගන්න.</p>
-      </div>
-      <div class="hero-visual" aria-hidden="true">
-        <img class="gear-art" src="/sinhala-engineering-technology/engineering-circuit.svg" alt="">
-      </div>
+      <span class="eyebrow">ශ්‍රී ලංකා අ.පො.ස. උසස් පෙළ</span>
+      <h1>ඉංජිනේරු තාක්ෂණවේදය</h1>
+      <p>පාඩම්, අන්තර්ක්‍රියාකාරී අධ්‍යයන සම්පත්, මෝටර් රථ තාක්ෂණ ප්‍රශ්නාවලිය සහ විෂය සීමා සහිත AI ගුරු සහායක පෙරදසුනක් එකම තැනකින්.</p>
     </section>
-    <div class="section-label"><h2>ප්‍රධාන අධ්‍යයන කොටස්</h2><span>ඔබට අවශ්‍ය කොටස තෝරාගෙන ඉගෙනීම ආරම්භ කරන්න</span></div>
-    <section class="cards" aria-label="ප්‍රධාන කොටස්">
-      <a class="card card-lessons" href="/sinhala-engineering-technology/Final.html">
-        <span class="icon" aria-hidden="true">📘</span>
-        <span class="card-kicker">01 · ඉගෙනුම් පාඩම්</span>
-        <h2>පාඩම්</h2>
-        <p>12 සහ 13 ශ්‍රේණි පාඩම් මාලා, අන්තර්ක්‍රියාකාරී ඉගෙනුම් අන්තර්ගත සහ සිමියුලේටර සමඟින් විෂය කරුණු හදාරන්න.</p>
-        <strong>පාඩම් වෙත යන්න <span aria-hidden="true">→</span></strong>
-      </a>
-      </section>
-    <section class="about">
-      <h2>විෂය දැනුමෙන් ප්‍රායෝගික අවබෝධය දක්වා</h2>
-      <p>පාඩම් තුළින් මූලික සංකල්ප හදාරා, සිමියුලේටර මඟින් ඒවා අත්හදා බලන්න. සංකල්ප අත්හදා බලමින් ප්‍රායෝගික අවබෝධය වර්ධනය කරගන්න.</p>
+    <h2 class="section-title">ඉගෙනීම ආරම්භ කරන්න</h2>
+    <section class="cards" aria-label="අධ්‍යයන කොටස්">
+      <a class="card" href="Final.html"><span class="icon" aria-hidden="true">📘</span><h3>පාඩම් මාලාව</h3><p>12 සහ 13 ශ්‍රේණි ඉංජිනේරු තාක්ෂණවේදය පාඩම් සහ අන්තර්ක්‍රියාකාරී අන්තර්ගතය.</p><span class="go">පාඩම් බලන්න →</span></a>
+      <a class="card" href="automobile-quiz/index.html"><span class="icon" aria-hidden="true">🚗</span><h3>මෝටර් රථ තාක්ෂණ ප්‍රශ්නාවලිය</h3><p>12 ශ්‍රේණියේ මෝටර් රථ තාක්ෂණ ඒකකය සඳහා සිංහල පුහුණු ප්‍රශ්න.</p><span class="go">ප්‍රශ්නාවලිය අරඹන්න →</span></a>
+      <a class="card" href="ai-tutor.html"><span class="icon" aria-hidden="true">🧑‍🏫</span><h3>AI ගුරු සහායක පෙරදසුන</h3><p>NIE මූලාශ්‍ර අනුව සීමා කළ 12 සහ 13 ශ්‍රේණි ET මාතෘකා සෙවුම් ආදර්ශය.</p><span class="go">පෙරදසුන විවෘත කරන්න →</span></a>
+      <a class="card" href="resources.html"><span class="icon" aria-hidden="true">📚</span><h3>අධ්‍යයන සම්පත්</h3><p>ඉංජිනේරු චිත්‍ර, නිෂ්පාදනය, චලිතය, මිනුම් සහ පාඩම් සබැඳි.</p><span class="go">සම්පත් බලන්න →</span></a>
     </section>
+    <section class="about"><h2>ස්ථිතික සහ විවෘත ප්‍රවේශ වෙබ් අඩවියක්</h2><p>මෙම අඩවිය HTML, CSS, JavaScript සහ ස්ථිතික ගොනු පමණක් භාවිත කරයි. GitHub Pages මත සෘජුව සේවය කළ හැකි අතර පරිශීලක ගිණුම්, පරිපාලක පිවිසුම්, uploads හෝ සර්වරයක් අවශ්‍ය නොවේ. AI සහායකය දේශීය සෙවුම් පෙරදසුනක් මිස සජීවී ජනක AI සේවාවක් නොවේ.</p></section>
   </main>
-  <footer class="wrap">
-    <div class="credits">
-      <div class="credit-chip"><strong>නිර්මාතෘ</strong><small>K.A.NIRODHA Maduranga</small></div>
-    </div>
-    </footer>
+  <footer class="wrap">ඉංජිනේරු තාක්ෂණවේදය · GitHub Pages සඳහා සකස් කළ ස්ථිතික වෙබ් අඩවිය</footer>
 </body>
 </html>
